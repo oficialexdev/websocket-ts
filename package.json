@@ -1,0 +1,27 @@
+{
+  "name": "websocket-ts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "launch": "npm run build && npm run start",
+    "dev": "npx nodemon --exec npm run launch -e ts,json"
+  },
+  "author": "oficialexdev",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^22.4.0",
+    "@types/ws": "^8.5.12",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
